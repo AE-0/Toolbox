@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ToolBox</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+</script>
+</head>
+<body>
+    <nav class="navbar">
+
+    </nav>
+    <div class="doc">
+        <nav class="sidebar">
+            <a href="./ponder.html">Promedio ponderado</a>
+            <a href="./os.html">Sistemas operativos</a>
+            <a href="./inferencia.html">Inferencia</a>
+            <a href="./ada.html">Analisis de algoritmos</a>
+        </nav>
+        <main id="main-content">
+            <h1>Inferencia y procesos estocasticos</h1>
+            <div class="container">
+                <select id="estadistica" class="select-menu">
+                    <option value="proportion">Proporción</option>
+                    <option value="mean">Media</option>
+                    <option value="variance">Varianza</option>
+                </select>
+                <div id="parameters" class="flex-row">
+                    <input class="input-number" type="number" id="mu" placeholder="mu">
+                    <input class="input-number" type="number" id="n" placeholder="n">
+                    <input class="input-number" type="number" id="o2" placeholder="o2">
+                    <input class="input-number" type="number" id="x" placeholder="x">
+                </div>
+                <div class="flex-row bottom-row">
+                    <button class="btn" id="calc" style="font-size: 30px">=</button>
+                    <h1 class="result"></h1>
+                </div>
+                <h1 class="math" style="display: flex; order: 2"></h1>
+            </div>
+        </main>
+    </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js" integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t" crossorigin="anonymous"></script>
+    <script src='./js/lib.js'></script>
+    <script defer src='./js/inferencia.js'></script>
+</body>
+</html>

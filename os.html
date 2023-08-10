@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ToolBox</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script defer src='./js/lib.js'></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="bar-left">
+        </div>
+        <div class="bar-right">
+            <button class="btn" id="settings"></button>
+        </div>
+    </nav>
+    <div class="doc">
+        <nav class="sidebar">
+            <a href="./ponder.html">Promedio ponderado</a>
+            <a href="./os.html">Sistemas operativos</a>
+            <a href="./inferencia.html">Inferencia</a>
+            <a href="./ada.html">Analisis de algoritmos</a>
+        </nav>
+        <main id="main-content">
+            <div class="container">
+                <h1>Algoritmos de reemplazo de páginas</h1>
+            </div>
+            <div class="container">
+                <div class="flex-row">
+                    <input class="input-number small" type="number" id="page-1" placeholder="page">
+                    <button class="btn" id="plus">+</button>
+                    <button class="btn" id="clipboard"></button>
+                    <input class="input-text" type="text" id="parse" hidden="">
+                    <button class="btn" id="minus">-</button>
+                </div>
+                <div class="flex-row bottom-row">
+                    <select id="algo" class="select-menu">
+                        <option value="fifo">FIFO</option>
+                        <option value="lru">LRU</option>
+                        <option value="optimo">Optimo</option>
+                    </select>
+                    <input class="input-number" type="number" id="bloques" min="0" max="100" placeholder="N bloques">
+                    <button class="btn" id="calc">calc</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src='./js/os.js'></script>
+</body>
+</html>
